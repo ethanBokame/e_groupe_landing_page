@@ -51,17 +51,17 @@ export default {
       infos: [
         {
           content: 'Abidjan - Marcory Zone 4C',
-          to: '',
+          to: '#',
           icon: 'solar:map-point-wave-bold'
         },
         {
           content: 'groupeexcellence0001@gmail.com',
-          to: '',
+          to: 'mailto:groupeexcellence0001@gmail.com',
           icon: 'simple-icons:gmail'
         },
         {
-          content: 'xx-xx-xx-xx-xx',
-          to: 'tel:+2250700000000',
+          content: '+225075843999',
+          to: 'tel:+2250758439990',
           icon: 'solar:phone-bold'
         }
       ]
