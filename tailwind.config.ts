@@ -1,8 +1,9 @@
+/** @type {import('tailwindcss').Config} */
 export default {
   theme: {
     extend: {
-      colors: {
-        
+      fontFamily: {
+        custom: ['Inter', 'sans-serif'],
       }
     }
   }
