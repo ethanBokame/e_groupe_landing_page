@@ -5,27 +5,33 @@ export default {
       items: [
         {
           label: 'A propos',
-          to: '/about'
+          to: '/about',
+          icon: 'solar:buildings-2-bold'
         },
         {
           label: 'Nos bases',
-          to: '/bases'
+          to: '/bases',
+          icon: 'solar:map-point-wave-bold'
         },
         {
           label: 'Nos majors',
-          to: '/majors'
+          to: '/majors',
+          icon: 'solar:square-academic-cap-2-bold'
         },
         {
           label: 'Galerie photos',
-          to: '/pictures'
+          to: '/pictures',
+          icon: 'solar:gallery-wide-bold'
         },
         {
           label: 'Actualités',
-          to: '/news'
+          to: '/news',
+          icon: 'solar:documents-bold'
         },
         {
           label: 'Contacts',
-          to: '/contacts'
+          to: '/contacts',
+          icon: 'solar:phone-bold'
         }
       ]
     }
