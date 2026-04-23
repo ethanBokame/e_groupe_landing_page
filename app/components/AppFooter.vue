@@ -1,5 +1,5 @@
 <template>
   <span>
-    yo
+    footer
   </span>
 </template>
