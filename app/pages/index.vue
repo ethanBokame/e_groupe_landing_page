@@ -1,3 +1,3 @@
 <template>
-  <div>Content</div>
+  <Swiper />
 </template>
