@@ -1,4 +1,3 @@
-import { SocialNetworkIconType } from '../types/SocialNetworkIconType';
 <script lang="ts">
 export default {
   data() {
@@ -47,12 +46,29 @@ export default {
         },
         {
           to: 'https://www.facebook.com/ExcellenceGroup1',
-          icon: 'simple-icons:whatsapp'
+          icon: 'simple-icons:facebook'
         },
         {
           to: 'https://www.instagram.com/group.excellence',
-          icon: 'simple-icons:facebook'
+          icon: 'simple-icons:instagram'
         },
+      ],
+      infos: [
+        {
+          content: 'Abidjan - Marcory Zone 4C',
+          to: '',
+          icon: 'solar:map-point-wave-bold'
+        },
+        {
+          content: 'groupeexcellence0001@gmail.com',
+          to: '',
+          icon: 'simple-icons:gmail'
+        },
+        {
+          content: 'xx-xx-xx-xx-xx',
+          to: 'tel:+2250700000000',
+          icon: 'solar:phone-bold'
+        }
       ]
     }
   }
@@ -61,35 +77,33 @@ export default {
 
 <template>
   <div class="flex items-center justify-between px-14 pl-10">
+    
     <NuxtLink to="/">
       <NuxtImg src="/logo.png" class="h-24 w-24" />
     </NuxtLink>
 
     <div class="flex gap-6 items-center">
-      <div class="flex items-center gap-2">
-        <Icon name="solar:map-point-wave-bold" class="text-yellow-500" />
-        <a href="" class="text-sm text-yellow-500 font-semibold hover:underline">Abidjan - Marcory Zone 4C</a>
-      </div>
-
+      
+      <InfoSup v-for="info in infos" :key="info.to" :info="info" />
+      
       <div class="h-5 w-[2px] bg-yellow-500 rounded-md"></div>
-
-      <div class="flex items-center gap-2">
-        <Icon name="solar:phone-bold" class="text-yellow-500" />
-        <a href="" class="text-sm text-yellow-500 font-semibold hover:underline">xx-xx-xx-xx-xx</a>
-      </div>
-
-      <div class="h-5 w-[2px] bg-yellow-500 rounded-md"></div>
-
+      
       <div class="flex gap-5 mt-1">
-        <SocialNetworkIcon v-for="sN in socialsNetworks" :sN="sN" />
+        <SocialNetworkIcon v-for="sN in socialsNetworks" :key="sN.to" :sN="sN" />
       </div>
+      
     </div>
+    
   </div>
 
   <nav class="flex bg-red-600 items-center justify-center">
+    
     <template v-for="link, index in links" :key="link.label">
+      
       <NavLink :link="link" />
+      
       <div v-if="index != links.length - 1" class="h-5 w-[1px] bg-yellow-500"></div>
+      
     </template>
   </nav>
 </template>
