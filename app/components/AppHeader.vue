@@ -1,3 +1,4 @@
+import { SocialNetworkIconType } from '../types/SocialNetworkIconType';
 <script lang="ts">
 export default {
   data() {
@@ -39,29 +40,40 @@ export default {
           icon: 'solar:user-bold'
         }
       ],
-      socialsNetworks: []
+      socialsNetworks: [
+        {
+          to: 'https://www.tiktok.com/@group.excellence',
+          icon: 'streamline-logos:tiktok-logo-solid'
+        },
+        {
+          to: 'https://www.facebook.com/ExcellenceGroup1',
+          icon: 'streamline-logos:facebook-logo-2-solid'
+        },
+        {
+          to: 'https://www.instagram.com/group.excellence',
+          icon: 'streamline-logos:instagram-logo-2-solid'
+        },
+      ]
     }
   }
 }
 </script>
 
 <template>
-  <nav>
+  <div class="flex items-center justify-between px-14 pl-10">
+    <NuxtLink to="/">
+      <NuxtImg src="/logo.png" class="h-24 w-24"/>
+    </NuxtLink>
+
     <div>
-      <NuxtLink to="/">
-        <NuxtImg src="/logo.png" />
-      </NuxtLink>
-
-      <div>
-        icon
-      </div>
+      <SocialNetworkIcon v-for="sN in socialsNetworks"  :sN="sN"/>
     </div>
+  </div>
 
-    <div class="flex bg-red-600 items-center justify-center">
-      <template v-for="link, index in links" :key="link.label">
-        <NavLink :link="link"/>
-        <div v-if="index != links.length - 1" class="h-5 w-[1px] bg-yellow-500"></div>
-      </template>
-    </div>
+  <nav class="flex bg-red-600 items-center justify-center">
+    <template v-for="link, index in links" :key="link.label">
+      <NavLink :link="link" />
+      <div v-if="index != links.length - 1" class="h-5 w-[1px] bg-yellow-500"></div>
+    </template>
   </nav>
 </template>
