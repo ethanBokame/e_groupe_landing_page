@@ -12,7 +12,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <a :href="sN.to" target="_blank" class="ml-4">
-    <Icon :name="sN.icon" class="text-yellow-500 h-5 w-5" />
+  <a :href="sN.to" target="_blank">
+    <Icon :name="sN.icon" class="text-yellow-500 hover:text-yellow-700" />
   </a>
 </template>

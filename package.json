@@ -18,7 +18,6 @@
     "vue-router": "^5.0.4"
   },
   "devDependencies": {
-    "@iconify-json/solar": "^1.2.5",
-    "@iconify-json/streamline-logos": "^1.2.0"
+    "@iconify-json/solar": "^1.2.5"
   }
 }
