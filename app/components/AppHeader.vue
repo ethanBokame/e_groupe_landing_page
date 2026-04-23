@@ -32,6 +32,11 @@ export default {
           label: 'Contacts',
           to: '/contacts',
           icon: 'solar:phone-bold'
+        },
+        {
+          label: 'Connexion',
+          to: '/login',
+          icon: 'solar:user-bold'
         }
       ]
     }
@@ -48,9 +53,9 @@ export default {
     </div>
 
     <div class="flex bg-red-600 items-center justify-center">
-      <template v-for="item in items" :key="item.label">
+      <template v-for="item, index in items" :key="item.label">
         <NavItem :item="item"/>
-        <div class="h-5 w-[1px] bg-yellow-500"></div>
+        <div v-if="index != items.length - 1" class="h-5 w-[1px] bg-yellow-500"></div>
       </template>
     </div>
   </nav>
