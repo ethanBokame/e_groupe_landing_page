@@ -29,11 +29,6 @@ export default {
           icon: 'solar:documents-bold'
         },
         {
-          label: 'Contacts',
-          to: '/contacts',
-          icon: 'solar:phone-bold'
-        },
-        {
           label: 'Connexion',
           to: '/login',
           icon: 'solar:user-bold'
@@ -102,7 +97,7 @@ export default {
       
       <NavLink :link="link" />
       
-      <div v-if="index != links.length - 1" class="h-5 w-[1px] bg-yellow-500"></div>
+      <div v-if="index != links.length - 1" class="h-5 w-[0.75px] bg-yellow-500"></div>
       
     </template>
   </nav>
