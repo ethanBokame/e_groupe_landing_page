@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      items: [
+      links: [
         {
           label: 'A propos',
           to: '/about',
@@ -38,7 +38,8 @@ export default {
           to: '/login',
           icon: 'solar:user-bold'
         }
-      ]
+      ],
+      socialsNetworks: []
     }
   }
 }
@@ -50,12 +51,16 @@ export default {
       <NuxtLink to="/">
         <NuxtImg src="/logo.png" />
       </NuxtLink>
+
+      <div>
+        icon
+      </div>
     </div>
 
     <div class="flex bg-red-600 items-center justify-center">
-      <template v-for="item, index in items" :key="item.label">
-        <NavItem :item="item"/>
-        <div v-if="index != items.length - 1" class="h-5 w-[1px] bg-yellow-500"></div>
+      <template v-for="link, index in links" :key="link.label">
+        <NavLink :link="link"/>
+        <div v-if="index != links.length - 1" class="h-5 w-[1px] bg-yellow-500"></div>
       </template>
     </div>
   </nav>
