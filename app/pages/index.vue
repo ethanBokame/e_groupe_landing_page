@@ -55,7 +55,8 @@ export default {
       <p>L’Excellence Groupe ne se contente pas de dispenser des cours, mais s’engage à guider la jeunesse sur le droit
         chemin en lui insufflant le goût du succès et du travail.</p>
       <NuxtLink to="/about"
-        class="text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white">
+        class="text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white"
+      >
         LIRE LA SUITE
       </NuxtLink>
     </div>
@@ -66,7 +67,11 @@ export default {
     <hr class="bg-red-600 h-1.5 w-36 mt-2 mx-auto">
     
     <div class="grid grid-cols-1 lg:grid-cols-3 py-12 gap-12">
-      <ReasonCard v-for="r in reasons" :key="r.label" :reason="r" />
+      <!-- mobile -->
+      <ReasonCard class="lg:hidden" v-for="(r, index) in reasons" :key="r.label" :reason="r" data-aos="fade-up"/>
+
+      <!-- desktop -->
+      <ReasonCard class="hidden lg:block" v-for="(r, index) in reasons" :key="r.label" :reason="r" data-aos="fade-up" :data-aos-delay="index * 150"/>
     </div>
   </section>
 

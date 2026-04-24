@@ -6,6 +6,11 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
-    'nuxt-swiper'
-  ]
+    'nuxt-swiper',
+    'nuxt-aos'
+  ],
+  aos: {
+    duration: 1300, // values from 0 to 3000, with step 50ms
+    once: true
+  }
 })
