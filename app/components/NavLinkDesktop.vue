@@ -1,10 +1,10 @@
 <script lang="ts">
-import type { NavLinkType } from '~/types/NavLinkType';
+import type { NavLinkDesktopType } from '~/types/NavLinkDesktopType';
 
 export default {
   props: {
     link: {
-      type: Object as PropType<NavLinkType>,
+      type: Object as PropType<NavLinkDesktopType>,
       required: true
     }
   },
