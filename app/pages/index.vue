@@ -43,14 +43,15 @@ export default {
 
 <template>
   <Swiper />
-  <section class="flex justify-between items-center px-14 py-16">
-    <div class="bg-red-600 p-12 w-[350px]">
-      <NuxtImg src="/pic_8.jpeg" class="h-[320px] max-w-fit " />
+
+  <section class="flex flex-col lg:flex-row gap-12 lg:justify-between items-center px-6 lg:px-14 py-16">
+    <div class="bg-red-600 py-0 lg:p-12 w-full lg:w-[350px]">
+      <NuxtImg src="/pic_8.jpeg" class="h-[200px] lg:h-[320px] mx-auto lg:mx-0 max-w-fit " />
     </div>
 
-    <div class="flex flex-col gap-[30px] w-[410px]">
+    <div class="flex flex-col gap-[30px] lg:w-[410px]">
       <div class="bg-red-600 h-[10px] w-[70px] mb-[-15px]"></div>
-      <h1 class="text-4xl font-bold">Plus qu'une structure</h1>
+      <h1 class="text-3xl lg:text-4xl font-bold">Plus qu'une structure</h1>
       <p>L’Excellence Groupe ne se contente pas de dispenser des cours, mais s’engage à guider la jeunesse sur le droit
         chemin en lui insufflant le goût du succès et du travail.</p>
       <NuxtLink to="/about"
@@ -60,11 +61,11 @@ export default {
     </div>
   </section>
 
-  <section class="px-14 py-16 bg-gray-100">
-    <h1 class="text-4xl font-bold text-center">Pourquoi choisir l'Excellence Groupe?</h1>
+  <section class="px-6 lg:px-14 py-16 bg-gray-100">
+    <h1 class="text-3xl lg:text-4xl font-bold text-center">Pourquoi choisir l'Excellence Groupe?</h1>
     <hr class="bg-red-600 h-1.5 w-36 mt-2 mx-auto">
     
-    <div class="grid grid-cols-3 py-12 gap-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 py-12 gap-12">
       <ReasonCard v-for="r in reasons" :key="r.label" :reason="r" />
     </div>
   </section>

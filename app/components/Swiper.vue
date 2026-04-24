@@ -27,7 +27,7 @@ onMounted(() => {
 
         <div class="lg:hidden absolute inset-0 bg-red-700"></div>
 
-        <div class="z-10 absolute inset-0 flex items-center justify-between max-w-[100vw]">
+        <div class="z-20 absolute inset-0 flex items-center justify-between max-w-[100vw]">
           <!-- Go back one slide -->
           <button @click="swiper.prev()">
             <Icon name="solar:alt-arrow-left-line-duotone" class="text-white h-10 w-10"></Icon>
