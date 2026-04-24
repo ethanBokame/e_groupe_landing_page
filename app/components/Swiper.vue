@@ -1,10 +1,6 @@
 <script setup lang="ts">
 // Create 10 slides
 const containerRef = ref(null)
-const slides = ref([
-  'pic_1.jpg',
-  'pic_2.jpg',
-])
 
 const swiper = useSwiper(containerRef, {
   loop: true,
@@ -25,13 +21,11 @@ onMounted(() => {
     <swiper-container ref="containerRef" :init="false">
       <swiper-slide v-for="i in 7" :key="i" class="relative overflow-hidden">
         <!-- background blur -->
-        <div class="absolute inset-0" :style="{
-          backgroundImage: `url(/pic_${i}.jpeg)`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          filter: 'blur(20px)',
-          transform: 'scale(1.1)'
-        }"></div>
+        <div class="hidden lg:block absolute inset-0 bg-center bg-cover transform lg:scale-105 lg:blur-[20px]"
+          :style="{ backgroundImage: `url(/pic_${i}.jpeg)` }">
+        </div>
+
+        <div class="lg:hidden absolute inset-0 bg-red-700"></div>
 
         <div class="z-10 absolute inset-0 flex items-center justify-between max-w-[100vw]">
           <!-- Go back one slide -->
@@ -46,7 +40,7 @@ onMounted(() => {
         </div>
 
         <!-- img -->
-        <NuxtImg :src="`/pic_${i}.jpeg`" class="z-10 h-[490px]" />
+        <NuxtImg :src="`/pic_${i}.jpeg`" class="z-10 h-[520px]" />
       </swiper-slide>
     </swiper-container>
   </ClientOnly>
