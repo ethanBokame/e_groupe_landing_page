@@ -54,7 +54,9 @@ export default {
     <SectionTitle>Nos différentes bases</SectionTitle>
 
     <div class="grid grid-cols-2 lg:grid-cols-6 py-12 gap-x-24 gap-y-12">
-      <Place v-for="(p, index) in places" :key="index" :place="p" data-aos="fade-up" :data-aos-delay="index * 150" />
+      <div v-for="(p, index) in places" :key="index" data-aos="fade-up" :data-aos-delay="index * 150">
+        <Place :place="p" />
+      </div>
     </div>
   </section>
 
