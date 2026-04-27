@@ -37,7 +37,7 @@ export default {
     
     <div class="grid grid-cols-1 lg:grid-cols-3 py-12 gap-12">
       <!-- mobile -->
-      <ReasonCard class="lg:hidden" v-for="(r, index) in reasons" :key="r.label" :reason="r" data-aos="fade-up"/>
+      <ReasonCard class="lg:hidden" v-for="r in reasons" :key="r.label" :reason="r" data-aos="fade-up"/>
 
       <!-- desktop -->
       <ReasonCard class="hidden lg:block" v-for="(r, index) in reasons" :key="r.label" :reason="r" data-aos="fade-up" :data-aos-delay="index * 150"/>
