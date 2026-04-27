@@ -1,70 +1,14 @@
 <script lang="ts">
+import { linksData } from '~/data/links.data';
+import { socialsNetworkData } from '~/data/socialsnetworks.data';
+import { infosData } from '~/data/infos.data';
+
 export default {
   data() {
     return {
-      links: [
-        {
-          label: 'A propos',
-          to: '/about',
-          icon: 'solar:buildings-2-bold'
-        },
-        {
-          label: 'Nos bases',
-          to: '/bases',
-          icon: 'solar:map-point-wave-bold'
-        },
-        {
-          label: 'Nos majors',
-          to: '/majors',
-          icon: 'solar:square-academic-cap-2-bold'
-        },
-        {
-          label: 'Galerie photos',
-          to: '/pictures',
-          icon: 'solar:gallery-wide-bold'
-        },
-        {
-          label: 'Actualités',
-          to: '/news',
-          icon: 'solar:documents-bold'
-        },
-        {
-          label: 'Connexion',
-          to: '/login',
-          icon: 'solar:user-bold'
-        }
-      ],
-      socialsNetworks: [
-        {
-          to: 'https://www.tiktok.com/@group.excellence',
-          icon: 'simple-icons:tiktok'
-        },
-        {
-          to: 'https://www.facebook.com/ExcellenceGroup1',
-          icon: 'simple-icons:facebook'
-        },
-        {
-          to: 'https://www.instagram.com/group.excellence',
-          icon: 'simple-icons:instagram'
-        },
-      ],
-      infos: [
-        {
-          content: 'Abidjan - Marcory Zone 4C',
-          to: '#',
-          icon: 'solar:map-point-wave-bold'
-        },
-        {
-          content: 'groupeexcellence0001@gmail.com',
-          to: 'mailto:groupeexcellence0001@gmail.com',
-          icon: 'simple-icons:gmail'
-        },
-        {
-          content: '+225075843999',
-          to: 'tel:+2250758439990',
-          icon: 'solar:phone-bold'
-        }
-      ],
+      links: linksData,
+      socialsNetworks: socialsNetworkData,
+      infos: infosData,
       IsOpen: false
     }
   },
@@ -128,7 +72,7 @@ export default {
   </div>
 
   <!-- desktop navbar -->
-  <nav class="hidden flex bg-red-600 items-center justify-center">
+  <nav class="hidden lg:flex bg-red-600 items-center justify-center">
     <template v-for="(l, index) in links" :key="l.label">
       <NavLinkDesktop :link="l" />
       <div v-if="index != links.length - 1" class="h-5 w-[0.75px] bg-yellow-500"></div>

@@ -1,14 +1,14 @@
 <script lang="ts">
 import type { SocialNetworkIconType } from '~/types/SocialNetworkIconType';
 
-export default defineComponent({
+export default {
   props: {
     sN: {
       type: Object as PropType<SocialNetworkIconType>,
       required: true
     }
   }
-})
+}
 </script>
 
 <template>
