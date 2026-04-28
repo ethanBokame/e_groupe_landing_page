@@ -1,4 +1,4 @@
-export type ReasonCardType = {
+export type ReasonCard = {
   label: string,
   description: string,
   img: string

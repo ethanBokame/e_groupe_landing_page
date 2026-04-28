@@ -1,10 +1,10 @@
 <script lang="ts">
-import type { SocialNetworkIconType } from '~/types/SocialNetworkIconType';
+import type { SocialNetworkIcon } from '~/types/SocialNetworkIcon.type';
 
 export default {
   props: {
     sN: {
-      type: Object as PropType<SocialNetworkIconType>,
+      type: Object as PropType<SocialNetworkIcon>,
       required: true
     }
   }

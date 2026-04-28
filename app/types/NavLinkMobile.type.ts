@@ -1,4 +1,4 @@
-export type NavLinkMobileType = {
+export type NavLinkMobile = {
   label: string;
   to: string;
   icon: string

@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { NavLinkDesktopType } from '~/types/NavLinkDesktopType';
+import type { NavLinkDesktopType } from '~/types/NavLinkDesktop.type';
 
 export default {
   props: {

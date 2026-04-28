@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { InfoSupType } from '~/types/InfoSupType'
+  import type { InfoSup } from '~/types/infosup.type';
   
   export default {
     props: {
       info: {
-        type: Object as PropType<InfoSupType>,
+        type: Object as PropType<InfoSup>,
         required: true
       }
     }

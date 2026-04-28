@@ -1,4 +1,4 @@
-export type InfoSupType = {
+export type InfoSup = {
   content: string,
   to: string,
   icon: string

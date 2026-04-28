@@ -1,10 +1,10 @@
 <script lang="ts">
-import type { place } from '~/types/place.type';
+import type { Place } from '~/types/Place.type';
 
 export default {
   props: {
     place: {
-      type: Object as PropType<place>,
+      type: Object as PropType<Place>,
       required: true
     }
   },

@@ -1,10 +1,10 @@
 <script lang="ts">
-import type { ReasonCardType } from '~/types/ReasonCardType';
+import type { ReasonCard } from '~/types/ReasonCard.type';
 
 export default {
   props: {
     reason: {
-      type: Object as PropType<ReasonCardType>,
+      type: Object as PropType<ReasonCard>,
       required: true
     }
   }

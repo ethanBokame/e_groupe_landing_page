@@ -1,10 +1,10 @@
 <script lang="ts">
-import type { NavLinkMobileType } from '~/types/NavLinkMobileType';
+import type { NavLinkMobile } from '~/types/NavLinkMobile.type';
 
 export default {
   props: {
     link: {
-      type: Object as PropType<NavLinkMobileType>,
+      type: Object as PropType<NavLinkMobile>,
       required: true
     }
   }

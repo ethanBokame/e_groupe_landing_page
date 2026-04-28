@@ -1,4 +1,4 @@
-export type place = {
+export type Place = {
   town: string,
   city: string,
   address: string,

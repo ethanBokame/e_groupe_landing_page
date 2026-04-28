@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { place } from '~/types/place.type';
+import type { place } from '~/types/Place.type';
 
 export default {
   props: {
