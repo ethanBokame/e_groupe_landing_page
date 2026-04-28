@@ -4,5 +4,6 @@ export type Place = {
   address: string,
   number: string,
   google_map: string,
-  yango: string
+  lat: string,
+  lon: string
 }

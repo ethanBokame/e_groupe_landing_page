@@ -2,10 +2,12 @@ export const placesData = [
   {
     town: "Dokui",
     city: "Abidjan",
-    address: "EPP la colombe Azur",
+    address: "EPP la Colombe Azur",
     number: "+2250707070707",
-    google_map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127107.89351436392!2d-4.149441719055146!3d5.3984269836609275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc195ee261db873%3A0x46328ee2e6dea673!2sGroupe%20scolaire%20colombe%202000%20azur!5e0!3m2!1sfr!2sci!4v1777301147063!5m2!1sfr!2sci",
-    yango: "#",
+    google_map:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127107.89351436392!2d-4.149441719055146!3d5.3984269836609275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc195ee261db873%3A0x46328ee2e6dea673!2sGroupe%20scolaire%20colombe%202000%20azur!5e0!3m2!1sfr!2sci!4v1777301147063!5m2!1sfr!2sci",
+    lat: "5.398429",
+    lon: "-4.00526",
   },
   {
     town: "Angré",
@@ -13,7 +15,8 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
   {
     town: "Abobo",
@@ -21,7 +24,8 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
   {
     town: "Adjamé",
@@ -29,7 +33,8 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
   {
     town: "Faya",
@@ -37,7 +42,8 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
   {
     town: "Cocody",
@@ -45,7 +51,8 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
   {
     town: "Yamoussoukro",
@@ -53,7 +60,8 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
   {
     town: "Koumassi",
@@ -61,7 +69,8 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
   {
     town: "Riveira 2",
@@ -69,7 +78,8 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
   {
     town: "Songon",
@@ -77,6 +87,7 @@ export const placesData = [
     address: "EPP la colombe Azur",
     number: "+2250707070707",
     google_map: "#",
-    yango: "#",
+    lat: "#",
+    lon: "#",
   },
 ];

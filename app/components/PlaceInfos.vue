@@ -28,7 +28,7 @@ export default {
       </p>
       <GoogleMap :link="place.google_map" />
       <b>Nous rejoindre avec Yango:</b>
-      <YangoButton />
+      <YangoButton :place="place" />
     </div>
   </div>
 </template>
