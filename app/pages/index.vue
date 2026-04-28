@@ -23,7 +23,7 @@ export default {
     </div>
 
     <div class="flex flex-col gap-[30px] lg:w-[410px]">
-      <div class="bg-red-600 h-[10px] w-[70px] mb-[-15px]"></div>
+      <hr class="bg-red-600 h-[10px] w-[70px] mb-[-15px]">
       <h1 class="text-3xl lg:text-4xl font-bold">Plus qu'une structure</h1>
       <p>En Activité depuis 2013, l’Excellence Groupe ne se contente pas de dispenser des cours, mais s’engage à guider
         la jeunesse sur le droit
