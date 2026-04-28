@@ -1,10 +1,10 @@
 <script lang="ts">
-import type { place } from '~/types/Place.type';
+import type { Place } from '~/types/Place.type';
 
 export default {
   props: {
     place: {
-      type: Object as PropType<place>,
+      type: Object as PropType<Place>,
       required: true
     }
   }
@@ -27,6 +27,7 @@ export default {
         </a>
       </p>
       <GoogleMap :link="place.google_map" />
+      <b>Nous rejoindre avec Yango:</b>
       <YangoButton />
     </div>
   </div>
