@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         lang: 'fr',
       },
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/logo.png' },
+        { rel: 'icon', type: 'image/png', href: '/logo.png' },
       ]
     }
   },
