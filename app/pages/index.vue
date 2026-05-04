@@ -18,17 +18,18 @@ export default {
 
   <!-- Mini presentation section -->
   <section class="flex flex-col lg:flex-row gap-12 lg:justify-between items-center px-6 lg:px-14 py-16">
-    <div class="bg-red-600 py-0 lg:p-12 w-full lg:w-[350px]">
+    <div class="bg-red-600 py-0 lg:p-12 w-full lg:w-[350px]" data-aos="fade-right">
       <NuxtImg src="/pic_8.jpeg" class="h-[200px] lg:h-[320px] mx-auto lg:mx-0 max-w-fit " />
     </div>
 
     <div class="flex flex-col gap-[30px] lg:w-[410px]">
-      <hr class="bg-red-600 h-[10px] w-[70px] mb-[-15px]">
-      <h1 class="text-3xl lg:text-4xl font-bold">Plus qu'une structure</h1>
-      <p>En Activité depuis 2013, l’Excellence Groupe ne se contente pas de dispenser des cours, mais s’engage à guider
+      <hr class="bg-red-600 h-[10px] w-[70px] mb-[-15px]" data-aos="fade-left">
+      <h1 class="text-3xl lg:text-4xl font-bold" data-aos="fade-left" data-aos-delay="50">Plus qu'une structure</h1>
+      <p data-aos="fade-left" data-aos-delay="60">En Activité depuis 2013, l’Excellence Groupe ne se contente pas de dispenser des cours, mais s’engage à guider
         la jeunesse sur le droit
         chemin en lui insufflant le goût du succès et du travail.</p>
       <NuxtLink to="/about"
+        data-aos="fade-left" data-aos-delay="70"
         class="text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white">
         LIRE LA SUITE
       </NuxtLink>
