@@ -1,4 +1,9 @@
 export const linksData = [
+    {
+    label: "Acceuil",
+    to: "/",
+    icon: "solar:home-bold",
+  },
   {
     label: "A propos",
     to: "/about",
@@ -10,19 +15,14 @@ export const linksData = [
     icon: "solar:map-point-wave-bold",
   },
   {
-    label: "Nos majors",
-    to: "/majors",
+    label: "Cours",
+    to: "/courses",
     icon: "solar:square-academic-cap-2-bold",
   },
   {
     label: "Galerie photos",
     to: "/pictures",
     icon: "solar:gallery-wide-bold",
-  },
-  {
-    label: "Actualités",
-    to: "/news",
-    icon: "solar:documents-bold",
   },
   {
     label: "Connexion",
