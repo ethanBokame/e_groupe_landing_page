@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col items-baseline rounded-lg overflow-hidden shadow-sm bg-white h-[350px]">
+  <div class="flex flex-col items-baseline rounded-lg overflow-hidden shadow-sm bg-white h-fit md:h-[360px] lg:h-[350px]">
     <NuxtImg class="h-[170px] w-full object-cover object-top rounded-bottom-ellipse mb-5" :src="reason.img" />
     <div class="flex gap-3 items-center mb-5 pl-4">
       <Icon :name="reason.icon" class="w-5 h-5" />

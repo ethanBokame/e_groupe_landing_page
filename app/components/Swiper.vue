@@ -41,7 +41,7 @@ onMounted(() => {
         </div>
 
         <!-- img -->
-        <NuxtImg :src="`/${s}`" class="z-10 h-[520px]" />
+        <NuxtImg :src="`/${s}`" class="z-10 h-[75vh]" />
       </swiper-slide>
     </swiper-container>
   </ClientOnly>

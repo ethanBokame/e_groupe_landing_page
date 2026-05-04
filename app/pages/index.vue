@@ -23,10 +23,8 @@ export default {
   <Swiper />
 
   <!-- Mini presentation section -->
-  <section class="flex flex-col lg:flex-row gap-12 lg:justify-between items-center px-6 lg:px-14 py-16">
-    <div class="bg-red-600 py-0 lg:p-12 w-full lg:w-[350px]" data-aos="fade-right">
-      <NuxtImg src="/pic_8.jpeg" class="h-[200px] lg:h-[320px] mx-auto lg:mx-0 max-w-fit " />
-    </div>
+  <section class="flex flex-col lg:flex-row gap-12 lg:justify-between items-center max-w-[1300px] mx-auto px-6 md:px-12 lg:px-14 py-16">
+    <NuxtImg src="/pic_8.jpeg" class="w-full lg:w-[40%] rounded-lg shadow-sm" data-aos="fade-right" />
 
     <div class="flex flex-col gap-[30px] lg:w-[410px]">
       <hr class="bg-red-600 h-[10px] w-[70px] mb-[-15px]" data-aos="fade-left">
@@ -43,27 +41,31 @@ export default {
   </section>
 
   <!-- Reasons section -->
-  <section class="px-6 lg:px-14 py-16 bg-gray-100">
+  <section class="py-16 bg-gray-100">
     <SectionTitle>Pourquoi choisir l'Excellence Groupe?</SectionTitle>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 py-12 gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
       <!-- mobile -->
-      <ReasonCard class="lg:hidden" v-for="r in reasons" :key="r.label" :reason="r" data-aos="fade-up" />
+      <ReasonCard class="md:hidden" v-for="r in reasons" :key="r.label" :reason="r" data-aos="fade-up" />
 
       <!-- desktop -->
-      <ReasonCard class="hidden lg:block" v-for="(r, index) in reasons" :key="r.label" :reason="r" data-aos="fade-up"
-        :data-aos-delay="index * 150" />
+      <ReasonCard 
+        class="hidden md:block" 
+        v-for="(r, index) in reasons" :key="r.label" :reason="r" 
+        data-aos="fade-up"
+        :data-aos-delay="index * 150" 
+      />
     </div>
   </section>
 
   <!-- Places section -->
-  <section class="px-6 lg:px-14 py-16">
+  <section class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto">
     <SectionTitle>Nos différentes bases</SectionTitle>
     
     <!-- mobile -->
     <div class="lg:hidden">
       <div class="py-12">
-        <div class="grid grid-cols-2 lg:grid-cols-6 gap-x-24 gap-y-12">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-x-24 gap-y-12">
           <div v-for="(p, i) in places.slice(0, 10)" :key="i" data-aos="fade-up" :data-aos-delay="i * 150">
             <Place :place="p" />
           </div>
@@ -78,7 +80,7 @@ export default {
     </div>
 
     <!-- desktop -->
-    <div class="hidden lg:grid grid-cols-2 lg:grid-cols-6 py-12 gap-x-24 gap-y-12">
+    <div class="hidden lg:grid lg:grid-cols-6 py-12 gap-x-24 gap-y-12">
       <div v-for="(p, i) in places" :key="i" data-aos="fade-up" :data-aos-delay="i * 150">
         <Place :place="p" />
       </div>
