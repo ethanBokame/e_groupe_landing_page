@@ -5,12 +5,7 @@ export default defineNuxtConfig({
       title: 'Excellence Groupe',
       htmlAttrs: {
         lang: 'fr',
-      },
-      link: [
-        { rel: 'icon', type: 'image/png', href: '/logo.png' },
-        { rel: 'dns-prefetch', href: '//www.google.com' },
-        { rel: 'preconnect', href: 'https://www.google.com', crossorigin: '' }
-      ],
+      }
     }
   },
   compatibilityDate: '2025-07-15',

@@ -5,6 +5,15 @@ export default {
       type: String,
       required: true
     }
+  },
+  useHead() {
+    return {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/logo.png' },
+        { rel: 'dns-prefetch', href: '//www.google.com' },
+        { rel: 'preconnect', href: 'https://www.google.com', crossorigin: '' }      
+      ]
+    }
   }
 }
 </script>

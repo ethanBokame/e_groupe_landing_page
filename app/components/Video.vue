@@ -1,11 +1,11 @@
 <script lang="ts">
 export default {
-  head() {
+  useHead() {
     return {
       script: [
         {
           src: "https://player.vimeo.com/api/player.js",
-          defer: true
+          async: true
         }
       ]
     }

@@ -1,10 +1,8 @@
 export const slidesData = [
-  'pic_0.jpeg',
-  'pic_1.jpeg',
-  'pic_2.jpeg',
-  'pic_3.jpeg',
-  'pic_4.jpeg',
-  'pic_5.jpeg',
-  'pic_6.jpeg',
-  'pic_7.jpeg',
+  'pic_16.jpeg',
+  'pic_17.jpeg',
+  'pic_18.jpeg',
+  'pic_19.jpeg',
+  'pic_20.jpeg',
+  'pic_21.jpeg',
 ]
