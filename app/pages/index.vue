@@ -24,7 +24,11 @@ export default {
 
   <!-- Mini presentation section -->
   <section class="flex flex-col lg:flex-row gap-12 lg:justify-between items-center max-w-[1300px] mx-auto px-6 md:px-12 lg:px-14 py-16">
-    <NuxtImg src="/pic_8.jpeg" class="w-full lg:w-[40%] rounded-lg shadow-sm" data-aos="fade-right" />
+    <div class="w-fit relative lg:w-[40%] z-20 md:bg-red-600" data-aos="fade-right">
+      <Video />
+      <div class="md:hidden absolute bg-red-600 p-7 top-[-10px] left-[28px]"></div>
+      <div class="md:hidden absolute bg-red-600 p-7 bottom-[-10px] right-[28px]"></div>
+    </div>
 
     <div class="flex flex-col gap-[30px] lg:w-[410px]">
       <hr class="bg-red-600 h-[10px] w-[70px] mb-[-15px]" data-aos="fade-left">
@@ -44,24 +48,21 @@ export default {
   <section class="py-16 bg-gray-100">
     <SectionTitle>Pourquoi choisir l'Excellence Groupe?</SectionTitle>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
       <!-- mobile -->
       <ReasonCard class="md:hidden" v-for="r in reasons" :key="r.label" :reason="r" data-aos="fade-up" />
 
       <!-- desktop -->
-      <ReasonCard 
-        class="hidden md:block" 
-        v-for="(r, index) in reasons" :key="r.label" :reason="r" 
-        data-aos="fade-up"
-        :data-aos-delay="index * 150" 
-      />
+      <ReasonCard class="hidden md:block" v-for="(r, index) in reasons" :key="r.label" :reason="r" data-aos="fade-up"
+        :data-aos-delay="index * 150" />
     </div>
   </section>
 
   <!-- Places section -->
   <section class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto">
     <SectionTitle>Nos différentes bases</SectionTitle>
-    
+
     <!-- mobile -->
     <div class="lg:hidden">
       <div class="py-12">
@@ -72,7 +73,7 @@ export default {
           <Place v-for="(p, i) in places.slice(10)" :place="p" :key="i" v-if="isOpenPlaces" />
         </div>
       </div>
-      
+
       <button class="w-full flex items-center justify-center gap-2" @click="togglePlaces">
         Voir {{ isOpenPlaces ? 'moins' : 'plus' }}
         <Icon :name="`solar:alt-arrow-${isOpenPlaces ? 'up' : 'down'}-line-duotone`" />

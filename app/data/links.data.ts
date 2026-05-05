@@ -6,27 +6,27 @@ export const linksData = [
   },
   {
     label: "A propos",
-    to: "/about",
+    to: "#",
     icon: "solar:buildings-2-bold",
   },
   {
     label: "Nos bases",
-    to: "/bases",
+    to: "#",
     icon: "solar:map-point-wave-bold",
   },
   {
     label: "Cours",
-    to: "/courses",
+    to: "#",
     icon: "solar:folder-with-files-bold",
   },
   {
     label: "Galerie photos",
-    to: "/pictures",
+    to: "#",
     icon: "solar:gallery-wide-bold",
   },
   {
     label: "Connexion",
-    to: "/login",
+    to: "#",
     icon: "solar:user-bold",
   },
 ];
