@@ -23,7 +23,8 @@ export default {
   <Swiper />
 
   <!-- Mini presentation section -->
-  <section class="flex flex-col lg:flex-row gap-12 lg:justify-between items-center max-w-[1300px] mx-auto px-6 md:px-12 lg:px-14 py-16">
+  <section
+    class="flex flex-col lg:flex-row gap-12 lg:justify-between items-center max-w-[1300px] mx-auto px-6 md:px-12 lg:px-14 py-16">
     <div class="w-fit relative lg:w-[40%] z-20 md:bg-red-600" data-aos="fade-right">
       <Video />
       <div class="md:hidden absolute bg-red-600 p-7 top-[-10px] left-[28px]"></div>
@@ -86,6 +87,16 @@ export default {
         <Place :place="p" />
       </div>
     </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto bg-gray-100">
+    <SectionTitle>L'Excellence Groupe en images</SectionTitle>
+    <Gallery />
+    <NuxtLink to="/about" class="flex items-center gap-2 w-fit mx-auto text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white">
+      <Icon name="solar:gallery-wide-bold" class="h-5 w-5" />
+      VOIR LA GALERIE
+    </NuxtLink>
   </section>
 
 </template>
