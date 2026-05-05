@@ -17,7 +17,7 @@ export const linksData = [
   {
     label: "Cours",
     to: "/courses",
-    icon: "solar:square-academic-cap-2-bold",
+    icon: "solar:folder-with-files-bold",
   },
   {
     label: "Galerie photos",
