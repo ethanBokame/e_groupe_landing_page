@@ -1,10 +1,10 @@
 <script lang="ts">
-import type { NavLinkDesktopType } from '~/types/NavLinkDesktop.type';
+import type { NavLinkDesktop } from '~/types/NavLinkDesktop.type';
 
 export default {
   props: {
     link: {
-      type: Object as PropType<NavLinkDesktopType>,
+      type: Object as PropType<NavLinkDesktop>,
       required: true
     }
   },
@@ -27,11 +27,11 @@ export default {
       <Icon :name="link.icon" class="text-yellow-300" />
       {{ link.label }}
     </div>
-    
-    <div :class="{
-      'absolute bottom-0 h-[4px] w-full bg-yellow-300': onThisPage,
-      'absolute bottom-0 h-[4px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full': !onThisPage,
-    }">
+
+    <div :class="[
+      'absolute bottom-0 h-[4px] bg-yellow-300 transition-all duration-300 group-hover:w-full',
+      onThisPage ? 'w-full' : 'w-0'
+    ]">
     </div>
     
   </NuxtLink>

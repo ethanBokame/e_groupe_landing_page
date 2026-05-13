@@ -15,6 +15,11 @@ export const linksData = [
     icon: "solar:map-point-wave-bold",
   },
   {
+    label: "Sujets",
+    to: "#",
+    icon: "solar:folder-with-files-bold",
+  },
+  {
     label: "Cours",
     to: "#",
     icon: "solar:folder-with-files-bold",
