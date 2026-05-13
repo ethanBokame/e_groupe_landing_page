@@ -1,3 +1,5 @@
+// pictures in slides folder
+
 export const slidesData = [
   "/slides/pic_1.jpeg",
   "/slides/pic_2.jpeg",
