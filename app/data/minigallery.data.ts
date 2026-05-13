@@ -9,4 +9,6 @@ export const minigalleryData = [
   "/minigallery/pic_6.jpeg",
   "/minigallery/pic_7.jpeg",
   "/minigallery/pic_8.jpeg",
+  "/minigallery/pic_10.jpeg",
+  "/minigallery/pic_11.jpeg",
 ]
