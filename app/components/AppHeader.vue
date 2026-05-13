@@ -72,7 +72,7 @@ export default {
   </div>
 
   <!-- desktop navbar -->
-  <nav class="hidden lg:flex sticky top-0 bg-red-600 items-center justify-center">
+  <nav class="hidden lg:flex sticky top-0 z-30 bg-red-600 items-center justify-center">
     <template v-for="(l, index) in links" :key="l.label">
       <NavLinkDesktop :link="l" />
       <div v-if="index != links.length - 1" class="h-5 w-[0.75px] bg-yellow-500"></div>
