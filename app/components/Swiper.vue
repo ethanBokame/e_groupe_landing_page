@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { slidesData } from '~/data/slides.data'
+
+const slides = slidesData  // Slides
 
 const containerRef = ref(null)
 
@@ -19,10 +22,10 @@ onMounted(() => {
 <template>
   <ClientOnly>
     <swiper-container ref="containerRef" :init="false">
-      <swiper-slide v-for="i in 5" :key="i" class="relative overflow-hidden">
+      <swiper-slide v-for="(s,i) in slides" :key="i" class="relative overflow-hidden">
         <!-- background blur -->
         <div class="hidden lg:block absolute inset-0 bg-center bg-cover transform lg:scale-105 lg:blur-[20px]"
-          :style="{ backgroundImage: `url(/slides/pic_${i}.jpeg)` }">
+          :style="{ backgroundImage: `url(${s})` }">
         </div>
 
         <div class="lg:hidden absolute inset-0 bg-red-700"></div>
@@ -40,7 +43,7 @@ onMounted(() => {
         </div>
 
         <!-- img -->
-        <NuxtImg :src="`/slides/pic_${i}.jpeg`" class="z-10 h-[75vh]" />
+        <NuxtImg :src="`${s}`" class="z-10 h-[75vh]" />
       </swiper-slide>
     </swiper-container>
   </ClientOnly>
