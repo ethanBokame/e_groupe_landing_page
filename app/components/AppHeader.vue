@@ -9,12 +9,13 @@ export default {
       links: linksData,
       socialsNetworks: socialsNetworkData,
       infos: infosData,
-      IsOpen: false
+      isOpen: false
     }
   },
   methods: {
     toggleMenu() {
-      this.IsOpen = !this.IsOpen
+      this.isOpen = !this.isOpen
+      document.body.style.overflow = this.isOpen ? "hidden" : "auto";
     }
   }
 }
@@ -30,7 +31,7 @@ export default {
     <!-- Shadow screen -->
     <ShadowScreen @click="toggleMenu" :class="[
       'transition-opacity duration-300',
-      IsOpen
+      isOpen
         ? 'opacity-100 pointer-events-auto'
         : 'opacity-0 pointer-events-none'
     ]" />
@@ -41,7 +42,7 @@ export default {
     <!-- mobile navbar -->
     <div :class="[
       'fixed top-0 right-0 flex flex-col p-4 pt-8 z-30 bg-black w-[250px] h-screen transition-transform duration-300 ease-in-out',
-      IsOpen ? 'translate-x-0' : 'translate-x-full'
+      isOpen ? 'translate-x-0' : 'translate-x-full'
     ]">
 
       <Icon name="lucide:x" class="h-8 w-8 text-yellow-500 self-end" @click="toggleMenu" />
