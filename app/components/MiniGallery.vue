@@ -29,7 +29,7 @@ export default {
   <lightgallery :settings="{ speed: 500, plugins: plugins }" :onInit="onInit" :onBeforeSlide="onBeforeSlide"
     class="grid grid-cols-3 md:grid-cols-4 md:grid-rows-8 gap-1.5 md:gap-3 md:h-[480px] py-12">
     <!-- Col 1 -->
-    <LightgalleryItem :url="pics[0] || ''" class="md:col-start-1 md:row-start-1 md:row-span-3" data-aos="fade-up" :data-aos-delay="1 * 150" />
+    <LightgalleryItem :url="pics[0] || ''" class="md:col-start-1 md:row-start-1 md:row-span-3" imgClass="object-top" data-aos="fade-up" :data-aos-delay="1 * 150" />
     <LightgalleryItem :url="pics[1] || ''" class="col-span-2 md:col-span-1 md:col-start-1 md:row-start-4 md:row-span-5" imgClass="object-top" data-aos="fade-up" :data-aos-delay="2 * 150" />
 
     <!-- Col 2 -->
