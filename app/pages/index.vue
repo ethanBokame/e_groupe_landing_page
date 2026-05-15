@@ -1,12 +1,14 @@
 <script lang="ts">
 import { reasonsData } from '~/data/reasons.data';
 import { placesData } from '~/data/places.data';
+import { teamData } from '~/data/team.data';
 
 export default {
   data() {
     return {
       reasons: reasonsData,
       places: placesData,
+      team: teamData,
       isOpenPlaces: false,
       sectionClass: "px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto"
     }
@@ -102,6 +104,9 @@ export default {
 
   <section :class="`${sectionClass}`">
     <SectionTitle>Equipe directive</SectionTitle>
+    <div class="grid grid-cols-1 gap-8 py-12">
+      <TeamItem v-for="(t,i) in team" :key="i" :item="t" data-aos="fade-up" :data-aos-delay="i * 150" />
+    </div>
   </section>
 
 </template>
