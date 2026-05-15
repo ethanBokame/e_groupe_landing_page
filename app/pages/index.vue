@@ -104,7 +104,7 @@ export default {
 
   <section :class="`${sectionClass}`">
     <SectionTitle>Equipe directive</SectionTitle>
-    <div class="grid grid-cols-1 gap-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-12">
       <TeamItem v-for="(t,i) in team" :key="i" :item="t" data-aos="fade-up" :data-aos-delay="i * 150" />
     </div>
   </section>
