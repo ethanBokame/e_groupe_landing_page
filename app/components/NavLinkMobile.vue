@@ -12,7 +12,6 @@ export default {
     route() {
       return useRoute()
     },
-
     onThisPage(): boolean {
       return this.route.path === this.link.to
     }
