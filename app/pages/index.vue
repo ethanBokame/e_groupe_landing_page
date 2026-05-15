@@ -7,7 +7,8 @@ export default {
     return {
       reasons: reasonsData,
       places: placesData,
-      isOpenPlaces: false
+      isOpenPlaces: false,
+      sectionClass: "px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto"
     }
   },
   methods: {
@@ -24,7 +25,8 @@ export default {
 
   <!-- Mini presentation section -->
   <section
-    class="flex flex-col lg:flex-row gap-12 lg:justify-between items-center max-w-[1300px] mx-auto px-6 md:px-12 lg:px-14 py-16">
+    :class="`${sectionClass} flex flex-col lg:flex-row gap-12 lg:justify-between items-center`"
+  >
     <div class="w-fit relative lg:w-[40%] z-20 md:bg-red-600" data-aos="fade-right">
       <Video />
       <div class="md:hidden absolute bg-red-600 p-7 top-[-10px] left-[28px]"></div>
@@ -61,7 +63,7 @@ export default {
   </section>
 
   <!-- Places section -->
-  <section class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto">
+  <section :class="`${sectionClass}`">
     <SectionTitle>Nos différentes bases</SectionTitle>
 
     <!-- mobile -->
@@ -89,13 +91,17 @@ export default {
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto bg-gray-100">
+  <!-- Mini gallery -->
+  <section :class="`${sectionClass} bg-gray-100`">
     <SectionTitle>L'Excellence Groupe en images</SectionTitle>
     <MiniGallery />
     <NuxtLink to="/about" class="flex items-center w-fit mx-auto text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white">
       VOIR LA GALERIE PHOTOS
     </NuxtLink>
+  </section>
+
+  <section :class="`${sectionClass}`">
+    <SectionTitle>Equipe directive</SectionTitle>
   </section>
 
 </template>
