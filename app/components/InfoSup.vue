@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { InfoSup } from '~/types/infosup.type';
+  import type { InfoSup } from '~/types/InfoSup.type';
   
   export default {
     props: {
