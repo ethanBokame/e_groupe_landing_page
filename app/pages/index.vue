@@ -29,12 +29,8 @@ export default {
   <section
     :class="`${sectionClass} flex flex-col lg:flex-row gap-12 lg:justify-between items-center`"
   >
-    <div class="w-fit relative lg:w-[40%] z-20 md:bg-red-600" data-aos="fade-right">
-      <Video />
-      <div class="md:hidden absolute bg-red-600 p-7 top-[-10px] left-[28px]"></div>
-      <div class="md:hidden absolute bg-red-600 p-7 bottom-[-10px] right-[28px]"></div>
-    </div>
-
+    <Video />
+    
     <div class="flex flex-col gap-[30px] lg:w-[410px]">
       <hr class="bg-red-600 h-[10px] w-[70px] mb-[-15px]" data-aos="fade-left">
       <h1 class="text-3xl lg:text-4xl font-bold" data-aos="fade-left" data-aos-delay="50">Plus qu'une structure</h1>

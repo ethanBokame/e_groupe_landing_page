@@ -12,7 +12,7 @@ export const teamData = [
   {
     img: "/pic_18.jpeg",
     name: "Amaka Franck",
-    job: "Directeur administratif",
+    job: "Responsable administratif",
   },
   {
     img: "/pic_17.jpeg",
