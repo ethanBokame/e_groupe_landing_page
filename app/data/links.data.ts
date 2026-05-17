@@ -11,7 +11,7 @@ export const linksData = [
   },
   {
     label: "Nos bases",
-    to: "#",
+    to: "/places",
     icon: "solar:map-point-wave-bold",
   },
   // {

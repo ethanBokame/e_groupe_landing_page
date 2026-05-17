@@ -9,11 +9,8 @@ export default {
     }
   },
   computed: {
-    route() {
-      return useRoute()
-    },
     onThisPage(): boolean {
-      return this.route.path === this.link.to
+      return currentRoute() === this.link.to
     }
   }
 }
