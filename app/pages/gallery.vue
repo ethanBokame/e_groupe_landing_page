@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       plugins: [lgThumbnail, lgZoom],
-      pics: [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 3, 4, 5, 6, 7, 8, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 3, 4, 5, 6, 7, 8, 7, 8],
+      pics: range(1,11),
       currentPage: 1,
       itemsPages: 24,
     }
