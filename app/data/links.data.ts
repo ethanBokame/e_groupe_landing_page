@@ -14,19 +14,9 @@ export const linksData = [
     to: "/places",
     icon: "solar:map-point-wave-bold",
   },
-  // {
-  //   label: "Sujets",
-  //   to: "#",
-  //   icon: "solar:folder-with-files-bold",
-  // },
-  // {
-  //   label: "Cours",
-  //   to: "#",
-  //   icon: "solar:folder-with-files-bold",
-  // },
   {
     label: "Galerie photos",
-    to: "#",
+    to: "/gallery",
     icon: "solar:gallery-wide-bold",
   },
   {
