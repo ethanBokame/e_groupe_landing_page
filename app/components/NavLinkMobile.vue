@@ -10,7 +10,7 @@ export default {
   },
   computed: {
     onThisPage(): boolean {
-      return currentRoute() === this.link.to
+      return currentRoute() === this.link.to || currentRoute() === this.link.to + '/'
     }
   }
 }
