@@ -14,12 +14,6 @@ export default {
         this.isVisible = window.scrollY > 1
       });
     },
-    scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
   }
 }
 </script>
