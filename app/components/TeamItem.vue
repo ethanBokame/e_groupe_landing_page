@@ -12,7 +12,11 @@ export default {
 </script>
 <template>
   <div class="flex flex-col items-center gap-3 text-center">
-    <NuxtImg :src="item.img" class="rounded-full w-[150px] border-4 border-yellow-500" />
+    <NuxtImg 
+      :src="item.img" 
+      format="webp"
+      loading="lazy"
+      class="rounded-full w-[150px] border-4 border-yellow-500" />
     <p class="text-xl font-bold mb-[-6px]">{{ item.name }}</p>
     <p>{{ item.job }}</p>
   </div>

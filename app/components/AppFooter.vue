@@ -20,30 +20,55 @@ export default {
 
     <div class="flex flex-col gap-7 px-6 md:px-12 lg:px-14 py-10 mx-auto max-w-[1300px]">
       <!-- Logo -->
-      <NuxtImg src="/logo.png" class="h-20 w-20 mx-auto md:h-25 md:w-25" />
-
+      <NuxtImg 
+        src="/logo.png" 
+        format="webp"
+        loading="lazy"
+        class="h-20 w-20 mx-auto md:h-25 md:w-25" />
+      
       <div class="flex flex-col md:flex-row md:justify-between gap-5">
-
+        
         <!-- Infos sup -->
         <div class="flex flex-col gap-2 p-3 w-full md:w-fit md:self-baseline bg-red-900 rounded-lg">
-          <div v-for="(i, index) in infos" :key="index" class="flex items-center gap-2 text-white">
-            <Icon :name="i.icon" class="h-6 w-6" />
-            <a :href="i.to" class="lg:hover:underline">{{ i.content }}</a>
+          <div 
+            v-for="(i, index) in infos" 
+            :key="index" 
+            class="flex items-center gap-2 text-white">
+            
+            <Icon 
+              :name="i.icon" 
+              class="h-6 w-6" />
+            
+            <a 
+              :href="i.to" 
+              class="lg:hover:underline">
+              {{ i.content }}</a>
           </div>
         </div>
 
         <!-- Menu -->
         <div class="flex flex-col gap-1 text-white">
           <p class="font-bold">MENU</p>
-          <a v-for="(l, i) in links" :key="i" :href="l.to">{{ l.label }}</a>
+          <a 
+            v-for="(l, i) in links" 
+            :key="i" 
+            :href="l.to">
+            {{ l.label }}</a>
         </div>
 
         <!-- Networks -->
         <div class="flex flex-col gap-1 text-white">
           <p class="font-bold">RESEAUX SOCIAUX</p>
           <div class="flex gap-4">
-            <a v-for="(sN, i) in socialsNetworks" :key="i" :href="sN.to" target="_blank">
-              <Icon :name="sN.icon" class="h-6 w-6" />
+            <a 
+              v-for="(sN, i) in socialsNetworks" 
+              :key="i" 
+              :href="sN.to" 
+              target="_blank">
+              
+              <Icon 
+                :name="sN.icon" 
+                class="h-6 w-6" />
             </a>
           </div>
         </div>

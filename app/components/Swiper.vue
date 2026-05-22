@@ -43,7 +43,13 @@ onMounted(() => {
         </div>
 
         <!-- img -->
-        <NuxtImg :src="`${s}`" class="z-10 h-[75vh]" />
+        <NuxtImg 
+          :src="`${s}`" 
+          format="webp"
+          preload 
+          loading="eager"
+          fetch-priority="high" 
+          class="z-10 h-[75vh]" />
       </swiper-slide>
     </swiper-container>
   </ClientOnly>

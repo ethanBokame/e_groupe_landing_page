@@ -13,7 +13,12 @@ export default {
 
 <template>
   <div class="flex flex-col items-baseline rounded-lg overflow-hidden shadow-sm bg-white h-fit md:h-[360px] lg:h-[350px]">
-    <NuxtImg class="h-[170px] w-full object-cover object-top rounded-bottom-ellipse mb-5" :src="reason.img" />
+    <NuxtImg 
+      :src="reason.img"
+      format="webp"
+      loading="lazy"
+      class="h-[170px] w-full object-cover object-top rounded-bottom-ellipse mb-5" />
+    
     <div class="flex gap-3 items-center mb-5 pl-4">
       <Icon :name="reason.icon" class="w-5 h-5" />
       <h2 class="font-bold text-xl">{{ reason.label }}</h2>

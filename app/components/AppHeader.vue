@@ -25,7 +25,13 @@ export default {
   <div class="flex items-center justify-between px-4 pl-2  lg:px-14 lg:pl-10">
 
     <NuxtLink to="/">
-      <NuxtImg src="/logo.png" class="h-24 w-24" />
+      <NuxtImg 
+        src="/logo.png" 
+        format="webp"
+        preload 
+        loading="eager"
+        fetch-priority="high" 
+        class="h-24 w-24" />
     </NuxtLink>
 
     <!-- Shadow screen -->

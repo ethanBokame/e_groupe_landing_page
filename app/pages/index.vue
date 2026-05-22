@@ -51,11 +51,11 @@ export default {
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
       <!-- mobile -->
-      <ReasonCard class="md:hidden" v-for="r in reasons" :key="r.label" :reason="r" data-aos="fade-up" />
-
+      <ReasonCard class="md:hidden" v-for="(r,i) in reasons" :key="i" :reason="r" data-aos="fade-up" />
+      
       <!-- desktop -->
-      <ReasonCard class="hidden md:block" v-for="(r, index) in reasons" :key="r.label" :reason="r" data-aos="fade-up"
-        :data-aos-delay="index * 150" />
+      <ReasonCard class="hidden md:block" v-for="(r,i) in reasons" :key="i" :reason="r" data-aos="fade-up"
+        :data-aos-delay="i * 150" />
     </div>
   </section>
 
@@ -100,7 +100,12 @@ export default {
   <section class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto">
     <SectionTitle>Equipe directive</SectionTitle>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-12">
-      <TeamItem v-for="(t,i) in team" :key="i" :item="t" data-aos="fade-up" :data-aos-delay="i * 150" />
+      <TeamItem 
+        v-for="(t,i) in team" 
+        :key="i" 
+        :item="t" 
+        data-aos="fade-up" 
+        :data-aos-delay="i * 150" />
     </div>
   </section>
 
