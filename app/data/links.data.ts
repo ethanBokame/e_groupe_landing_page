@@ -6,7 +6,7 @@ export const linksData = [
   },
   {
     label: "A propos",
-    to: "#",
+    to: "/about",
     icon: "solar:buildings-2-bold",
   },
   {
@@ -21,7 +21,7 @@ export const linksData = [
   },
   {
     label: "Connexion",
-    to: "#",
+    to: "/login",
     icon: "solar:user-bold",
   },
 ];
