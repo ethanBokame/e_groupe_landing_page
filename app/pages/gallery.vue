@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       plugins: [lgThumbnail, lgZoom],
-      pics: range(1, 43),
+      pics: range(43,1),
       currentPage: 1,
       itemsPages: 24,
     }
@@ -75,7 +75,7 @@ export default {
     },
     onBeforeSlide() {
       console.log('calling before slide');
-    },
+    }
   },
 }
 </script>
