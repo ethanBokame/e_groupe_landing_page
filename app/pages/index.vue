@@ -92,7 +92,7 @@ export default {
   <section class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto bg-gray-100">
     <SectionTitle>L'Excellence Groupe en images</SectionTitle>
     <MiniGallery />
-    <NuxtLink to="/about" class="flex items-center w-fit mx-auto text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white">
+    <NuxtLink to="/gallery" class="flex items-center w-fit mx-auto text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white">
       VOIR LA GALERIE PHOTOS
     </NuxtLink>
   </section>

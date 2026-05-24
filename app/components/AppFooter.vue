@@ -49,11 +49,11 @@ export default {
         <!-- Menu -->
         <div class="flex flex-col gap-1 text-white">
           <p class="font-bold">MENU</p>
-          <a 
-            v-for="(l, i) in links" 
+          <NuxtLink 
+            v-for="(l,i) in links" 
             :key="i" 
-            :href="l.to">
-            {{ l.label }}</a>
+            :to="l.to">
+            {{ l.label }}</NuxtLink>
         </div>
 
         <!-- Networks -->
