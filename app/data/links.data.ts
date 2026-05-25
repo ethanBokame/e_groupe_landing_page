@@ -1,5 +1,5 @@
 export const linksData = [
-    {
+  {
     label: "Acceuil",
     to: "/",
     icon: "solar:home-bold",

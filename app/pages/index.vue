@@ -2,6 +2,7 @@
 import { reasonsData } from '~/data/reasons.data';
 import { placesData } from '~/data/places.data';
 import { teamData } from '~/data/team.data';
+import { servicesData } from '~/data/services.data';
 
 export default {
   setup() {
@@ -11,6 +12,7 @@ export default {
   },
   data() {
     return {
+      services: servicesData,
       reasons: reasonsData,
       places: placesData,
       team: teamData,
@@ -64,16 +66,36 @@ export default {
     </div>
   </section>
 
-  <section>
+  <!-- Services section -->
+  <section class="pt-5 pb-16">
+    <SectionTitle>Nos services</SectionTitle>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-12 gap-6 md:gap-16 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
+      <Service 
+        v-for="(s,i) in services" 
+        :key="i" 
+        :service="s" 
+        data-aos="fade-up" />
+    </div>
 
+    <div class="w-fit mx-auto text-center">
+      <p 
+        class="text-3xl mb-7" 
+        data-aos="fade-up">
+        Contactez nous pour plus d'informations</p>
+      
+      <a 
+        class="text-2xl tracking-widest text-white bg-yellow-500 py-3 px-6 rounded-full" 
+        href="tel:+2250758439990" 
+        data-aos="fade-up">
+        0758439990</a>
+    </div>
   </section>
 
   <!-- Reasons section -->
   <section class="py-16 bg-gray-100">
     <SectionTitle>Pourquoi choisir l'Excellence Groupe?</SectionTitle>
 
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
       <!-- mobile -->
       <ReasonCard class="md:hidden" v-for="(r,i) in reasons" :key="i" :reason="r" data-aos="fade-up" />
       
