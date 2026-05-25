@@ -4,7 +4,10 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         lang: 'fr',
-      }
+      },
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/logo.png' },
+      ]
     }
   },
   compatibilityDate: '2025-07-15',

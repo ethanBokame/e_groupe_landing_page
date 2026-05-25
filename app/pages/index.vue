@@ -31,22 +31,41 @@ export default {
 
   <!-- Mini presentation section -->
   <section
-    class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto flex flex-col lg:flex-row gap-12 lg:justify-between items-center"
-  >
+    class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto flex flex-col lg:flex-row gap-12 lg:justify-between items-center">
+
     <Video />
     
     <div class="flex flex-col gap-[30px] lg:w-[410px]">
-      <hr class="bg-red-600 h-[10px] w-[70px] mb-[-15px]" data-aos="fade-left">
-      <h1 class="text-3xl lg:text-4xl font-bold" data-aos="fade-left" data-aos-delay="50">Plus qu'une structure</h1>
-      <p data-aos="fade-left" data-aos-delay="60">En Activité depuis 2013, l’Excellence Groupe ne se contente pas de
+      
+      <hr 
+        class="bg-red-600 h-[10px] w-[70px] mb-[-15px]" 
+        data-aos="fade-left">
+
+      <h1 
+        class="text-3xl lg:text-4xl font-bold" 
+        data-aos="fade-left" 
+        data-aos-delay="50">
+        Plus qu'une structure</h1>
+      
+      <p 
+        data-aos="fade-left" 
+        data-aos-delay="60">
+        En Activité depuis 2013, l’Excellence Groupe ne se contente pas de
         dispenser des cours, mais s’engage à guider
         la jeunesse sur le droit
         chemin en lui insufflant le goût du succès et du travail.</p>
-      <NuxtLink to="/about" data-aos="fade-left" data-aos-delay="70"
+      
+      <NuxtLink 
+        to="/about" 
+        data-aos="fade-left" 
+        data-aos-delay="70"
         class="text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white">
-        LIRE LA SUITE
-      </NuxtLink>
+        LIRE LA SUITE</NuxtLink>
     </div>
+  </section>
+
+  <section>
+
   </section>
 
   <!-- Reasons section -->
