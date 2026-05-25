@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Excellence Groupe',
       htmlAttrs: {
         lang: 'fr',
       }

@@ -4,6 +4,11 @@ import { placesData } from '~/data/places.data';
 import { teamData } from '~/data/team.data';
 
 export default {
+  setup() {
+    useHead({
+      title: 'Acceuil'
+    })
+  },
   data() {
     return {
       reasons: reasonsData,

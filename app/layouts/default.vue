@@ -1,3 +1,8 @@
+<script setup lang="ts">
+useHead({
+  titleTemplate: '%s | Excellence Groupe'
+})
+</script>
 <template>
   <div>
     <AppHeader />

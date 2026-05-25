@@ -6,6 +6,11 @@ import lgZoom from 'lightgallery/plugins/zoom';
 let lightGallery: any = null;
 
 export default {
+  setup() {
+    useHead({
+      title: 'Galerie photos'
+    })
+  },
   components: {
     Lightgallery,
   },
@@ -19,7 +24,7 @@ export default {
   data() {
     return {
       plugins: [lgThumbnail, lgZoom],
-      pics: range(43,1),
+      pics: range(43, 1),
       currentPage: 1,
       itemsPages: 24,
     }
@@ -85,34 +90,25 @@ export default {
 
     <PageTitle>Galerie Photos</PageTitle>
 
-    <lightgallery 
-      :settings="{ speed: 500, plugins: plugins }" 
-      :onInit="onInit" 
-      :onBeforeSlide="onBeforeSlide"
+    <lightgallery :settings="{ speed: 500, plugins: plugins }" :onInit="onInit" :onBeforeSlide="onBeforeSlide"
       class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1.5 py-12">
-      
-      <a v-for="i in pics.slice(firstIndex, lastIndex)" 
-        :href="`/gallery/pic_${i}.jpeg`" 
-        class="overflow-hidden">
-        
-        <NuxtImg 
-          :src="`/gallery/pic_${i}.jpeg`"
-          class="w-full h-[200px] object-cover hover:scale-110 duration-300 hover:cursor-zoom-in" 
-          format="webp"
+
+      <a v-for="i in pics.slice(firstIndex, lastIndex)" :href="`/gallery/pic_${i}.jpeg`" class="overflow-hidden">
+
+        <NuxtImg :src="`/gallery/pic_${i}.jpeg`"
+          class="w-full h-[200px] object-cover hover:scale-110 duration-300 hover:cursor-zoom-in" format="webp"
           placeholder />
       </a>
     </lightgallery>
 
     <div class="flex items-center justify-center gap-2">
 
-      <button 
-        :class="['flex items-center justify-center h-9 w-9 border rounded-md', noPagesPrev ? 'bg-gray-200' : '']"
+      <button :class="['flex items-center justify-center h-9 w-9 border rounded-md', noPagesPrev ? 'bg-gray-200' : '']"
         :disabled="noPagesPrev" @click="goToFirstPage(); scrollToTopGallery()">
         <Icon name="solar:double-alt-arrow-left-linear" />
       </button>
 
-      <button 
-        :class="['flex items-center justify-center h-9 w-9 border rounded-md', noPagesPrev ? 'bg-gray-200' : '']"
+      <button :class="['flex items-center justify-center h-9 w-9 border rounded-md', noPagesPrev ? 'bg-gray-200' : '']"
         :disabled="noPagesPrev" @click="decrement(); scrollToTopGallery()">
         <Icon name="solar:alt-arrow-left-linear" />
       </button>
@@ -123,28 +119,24 @@ export default {
         {{ firstButtonValue }}
       </button>
 
-      <button 
-        v-if="pages > 1"
+      <button v-if="pages > 1"
         :class="['flex items-center justify-center h-9 w-9 border rounded-md', currentPage == secondButtonValue ? 'bg-red-600/20 border-red-600' : '']"
         @click="setCurrentPage(secondButtonValue); scrollToTopGallery()">
         {{ secondButtonValue }}
       </button>
 
-      <button 
-        v-if="pages > 2 && thirdButtonValue <= pages"
+      <button v-if="pages > 2 && thirdButtonValue <= pages"
         :class="['flex items-center justify-center h-9 w-9 border rounded-md', currentPage == thirdButtonValue ? 'bg-red-600/20 border-red-600' : '']"
         @click="setCurrentPage(thirdButtonValue); scrollToTopGallery()">
         {{ thirdButtonValue }}
       </button>
 
-      <button 
-        :class="['flex items-center justify-center h-9 w-9 border rounded-md', noPagesNext ? 'bg-gray-200' : '']"
+      <button :class="['flex items-center justify-center h-9 w-9 border rounded-md', noPagesNext ? 'bg-gray-200' : '']"
         :disabled="noPagesNext" @click="increment(); scrollToTopGallery()">
         <Icon name="solar:alt-arrow-right-linear" />
       </button>
 
-      <button 
-        :class="['flex items-center justify-center h-9 w-9 border rounded-md', noPagesNext ? 'bg-gray-200' : '']"
+      <button :class="['flex items-center justify-center h-9 w-9 border rounded-md', noPagesNext ? 'bg-gray-200' : '']"
         :disabled="noPagesNext" @click="goToLastPage(); scrollToTopGallery()">
         <Icon name="solar:double-alt-arrow-right-linear" />
       </button>
