@@ -33,7 +33,7 @@ export default {
 
   <!-- Mini presentation section -->
   <section
-    class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto flex flex-col lg:flex-row gap-12 lg:justify-between items-center">
+    class="px-6 md:px-12 lg:px-14 py-16 max-w-[1300px] mx-auto flex flex-col lg:flex-row gap-12 lg:justify-between items-center overflow-x-hidden">
 
     <Video />
     
@@ -63,7 +63,7 @@ export default {
   </section>
 
   <!-- Services section -->
-  <section class="pt-5 pb-16">
+  <section class="pt-5 pb-16 overflow-x-hidden">
     <SectionTitle>Nos services</SectionTitle>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-12 gap-6 md:gap-16 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
       <Service 
