@@ -65,7 +65,7 @@ export default {
   <!-- Services section -->
   <section class="pt-5 pb-16 overflow-x-hidden">
     <SectionTitle>Nos services</SectionTitle>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-12 gap-6 md:gap-16 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-12 lg:py-16 gap-10 md:gap-16 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
       <Service 
         v-for="(s,i) in services" 
         :key="i" 
@@ -84,6 +84,7 @@ export default {
         href="tel:+2250758439990" 
         data-aos="fade-up">
         0758439990</a>
+        
     </div>
   </section>
 
