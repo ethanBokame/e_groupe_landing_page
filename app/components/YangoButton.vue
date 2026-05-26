@@ -25,7 +25,7 @@ export default {
 
 <template>
   <div 
-    class="ya-taxi-widget" 
+    class="ya-taxi-widget w-full" 
     data-ref="yoursitename" 
     data-size="s" 
     data-theme="normal" 
