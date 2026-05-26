@@ -12,7 +12,7 @@ export const servicesData = [
     description: "Préparation intensive du BTS IDA, Génie Civil, FCGE, etc..."
   },
   {
-    label: "PREPARATION INPHB",
-    description: "Préparation intensive du concours écrit d'entrée à l'INPHB en revisitant tous les anciens sujets."
+    label: "PREPARATION INPHB & ESATIC",
+    description: "Préparation intensive du concours écrit d'entrée à l'INPHB et à l'ESATIC en revisitant tous les anciens sujets."
   }
 ]
