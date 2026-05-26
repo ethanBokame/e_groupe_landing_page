@@ -21,7 +21,7 @@ export default {
         {{ place.address }}
       </p>
       <p>
-        <b>Numéro: </b>
+        <b>Superviseur de la base: </b>
         <a :href="'tel:' + place.number" class="underline">
           {{ place.number }}
         </a>
