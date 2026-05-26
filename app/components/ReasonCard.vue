@@ -20,7 +20,7 @@ export default {
       class="h-[170px] w-full object-cover object-top rounded-bottom-ellipse mb-5" />
     
     <div class="flex gap-3 items-center mb-5 pl-4">
-      <Icon :name="reason.icon" class="w-5 h-5" />
+      <Icon :name="reason.icon" class="w-5 h-5 text-yellow-500" />
       <h2 class="font-bold text-xl">{{ reason.label }}</h2>
     </div>
     
