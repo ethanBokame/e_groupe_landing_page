@@ -90,14 +90,17 @@ export default {
 
     <PageTitle>Galerie Photos</PageTitle>
 
-    <lightgallery :settings="{ speed: 500, plugins: plugins }" :onInit="onInit" :onBeforeSlide="onBeforeSlide"
+    <lightgallery 
+      :settings="{ speed: 500, plugins: plugins }" 
+      :onInit="onInit" 
+      :onBeforeSlide="onBeforeSlide"
       class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1.5 py-12">
 
       <a v-for="i in pics.slice(firstIndex, lastIndex)" :href="`/gallery/pic_${i}.jpeg`" class="overflow-hidden">
-
-        <NuxtImg :src="`/gallery/pic_${i}.jpeg`"
-          class="w-full h-[200px] object-cover hover:scale-110 duration-300 hover:cursor-zoom-in" format="webp"
-          placeholder />
+        <NuxtImg 
+          :src="`/gallery/pic_${i}.jpeg`"
+          class="w-full h-[200px] object-cover hover:scale-110 duration-300 hover:cursor-zoom-in" 
+          format="webp" />
       </a>
     </lightgallery>
 
