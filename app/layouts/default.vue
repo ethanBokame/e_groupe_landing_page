@@ -4,7 +4,7 @@ useHead({
 })
 </script>
 <template>
-  <div>
+  <div :style="{fontFamily: 'Inter, sans-serif'}">
     <AppHeader />
     <slot />
     <AppFooter />

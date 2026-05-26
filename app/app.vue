@@ -1,5 +1,5 @@
 <template>
-  <div :style="{fontFamily: 'Inter, sans-serif'}">
+  <div>
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
