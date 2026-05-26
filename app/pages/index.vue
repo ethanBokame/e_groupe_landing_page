@@ -45,13 +45,10 @@ export default {
 
       <h1 
         class="text-3xl lg:text-4xl font-bold" 
-        data-aos="fade-left" 
-        data-aos-delay="50">
+        data-aos="fade-left">
         Plus qu'une structure</h1>
       
-      <p 
-        data-aos="fade-left" 
-        data-aos-delay="60">
+      <p data-aos="fade-left">
         En Activité depuis 2013, l’Excellence Groupe ne se contente pas de
         dispenser des cours, mais s’engage à guider
         la jeunesse sur le droit
@@ -59,8 +56,7 @@ export default {
       
       <NuxtLink 
         to="/about" 
-        data-aos="fade-left" 
-        data-aos-delay="70"
+        data-aos="fade-left"
         class="text-white bg-red-600 px-3.5 py-2.5 font-bold self-baseline border-2 duration-200 border-red-600 hover:border-yellow-500 hover:text-yellow-500 hover:bg-white">
         LIRE LA SUITE</NuxtLink>
     </div>
@@ -74,7 +70,7 @@ export default {
         v-for="(s,i) in services" 
         :key="i" 
         :service="s" 
-        data-aos="fade-up" />
+        :data-aos="isMobile() ? 'fade-left' : 'fade-up'" />
     </div>
 
     <div class="w-fit mx-auto text-center">
@@ -94,14 +90,13 @@ export default {
   <!-- Reasons section -->
   <section class="py-16 bg-gray-100">
     <SectionTitle>Pourquoi choisir l'Excellence Groupe?</SectionTitle>
-
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 px-6 md:px-12 lg:px-14 max-w-[1300px] mx-auto">
-      <!-- mobile -->
-      <ReasonCard class="md:hidden" v-for="(r,i) in reasons" :key="i" :reason="r" data-aos="fade-up" />
-      
-      <!-- desktop -->
-      <ReasonCard class="hidden md:block" v-for="(r,i) in reasons" :key="i" :reason="r" data-aos="fade-up"
-        :data-aos-delay="i * 150" />
+      <ReasonCard 
+        v-for="(r,i) in reasons" 
+        :key="i" 
+        :reason="r" 
+        data-aos="fade-up"
+        :data-aos-delay="isMobile() ? 0 : i * 150" />
     </div>
   </section>
 
