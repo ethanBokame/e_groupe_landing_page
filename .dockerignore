@@ -1,0 +1,15 @@
+node_modules
+.nuxt
+.output
+.git
+.vscode
+.idea
+coverage
+.cache
+dist
+*.log
+.DS_Store
+Thumbs.db
+
+# Pnpm
+.pnpm-store/
