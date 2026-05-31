@@ -1,2 +1,6 @@
 // Detect mobile device
-export const isMobile = () => window.innerWidth < 768
+export const isMobile = () => {
+  if (import.meta.server) return false  // Return false if we are in SSR
+
+  return window.innerWidth < 768
+}
