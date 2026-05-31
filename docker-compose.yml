@@ -2,12 +2,15 @@ services:
   frontend:
     build: .
     container_name: e_groupe_landing_page_frontend_dev
+    
     ports:
       - "3000:3000"
+    
     environment:
       - HOST=0.0.0.0
       - PORT=3000
       - CI=true
+      - CHOKIDAR_USEPOLLING=true
     
     volumes:
       - .:/app
